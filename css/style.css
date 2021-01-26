@@ -14,58 +14,88 @@
 }
 
 .logo {
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: flex-start;
-  height: 90%;
-  padding-top: 5%;
+  position: relative;
+  width: 752px;
+  height: 752px;
 }
 
 @keyframes logo__image--scale {
- from { transform: scale(10); }
- to { transform: scale(1);}
+  from { transform: scale(10); }
+  to { transform: scale(1);}
 }
 @-webkit-keyframes logo__image--scale {
- from { transform: scale(10); }
- to { transform: scale(1);}
+  from { transform: scale(10); }
+  to { transform: scale(1);}
 }
 @-moz-keyframes logo__image--scale {
- from { transform: scale(10); }
- to { transform: scale(1);}
+  from { transform: scale(10); }
+  to { transform: scale(1);}
 }
-.logo__image {
- 
- width: 402px;
- height: auto;
- 
- animation: logo__image--scale 1s;
- -webkit-animation: logo__image--scale 1s;
- -moz-animation: logo__image--scale 1s;
+
+@keyframes logo__image--right {
+  from { right: 500%; }
+  to { right: 50%; }
+}
+@-webkit-keyframes logo__image--right {
+  from { right: 500%; }
+  to { right: 50%; }
+}
+@-moz-keyframes logo__image--right {
+  from { right: 500%; }
+  to { right: 50%; }
+}
+
+@keyframes logo__image--left {
+  from { left: 500%; }
+  to { left: 50%; }
+}
+@-webkit-keyframes logo__image--left {
+  from { left: 500%; }
+  to { left: 50%; }
+}
+@-moz-keyframes logo__image--left {
+  from { left: 500%; }
+  to { left: 50%; }
+}
+
+.logo__image--left {
+  position: absolute;
+  right: 50%;
+  animation: logo__image--scale 1s, logo__image--right 1s;
+  -webkit-animation: logo__image--scale 1s, logo__image--right 1s;
+  -moz-animation: logo__image--scale 1s, logo__image--right 1s;
+}
+
+.logo__image--right {
+  position: absolute;
+  left: 50%;
+  animation: logo__image--scale 1s, logo__image--left 1s;
+  -webkit-animation: logo__image--scale 1s, logo__image--left 1s;
+  -moz-animation: logo__image--scale 1s, logo__image--left 1s;
 }
 
 @keyframes logo__title--transparent {
- from { opacity: 0; }
- to { opacity: 1;}
+  from { opacity: 0; }
+  to { opacity: 1;}
 }
 @-webkit-keyframes logo__title--transparent {
- from { opacity: 0; }
- to { opacity: 1;}
+  from { opacity: 0; }
+  to { opacity: 1;}
 }
 @-moz-keyframes logo__title--transparent {
- from { opacity: 0; }
- to { opacity: 1;}
+  from { opacity: 0; }
+  to { opacity: 1;}
 }
 .logo__title {
   animation: logo__title--transparent 1.4s;
   -webkit-animation: logo__title--transparent 1.4s;
   -moz-animation: logo__title--transparent 1.4s;
 
+  position: absolute;
+  bottom: 0;
   font-family: 'Roboto', sans-serif;
   font-size: 55pt;
   color: #54A7C4;
-  margin-top: 70px;
-  margin-bottom: 0;
   font-weight: 400;
   text-align: center;
 }
