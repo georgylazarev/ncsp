@@ -4,5 +4,5 @@
   document.querySelector('.logo__title').style.display = 'none';
   setTimeout(() => {
     document.querySelector('.logo__title').style.display = 'inline'
-  }, 1200);
+  }, 1700);
 })();

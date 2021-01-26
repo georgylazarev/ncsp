@@ -39,9 +39,9 @@
  width: 402px;
  height: auto;
  
- animation: logo__image--scale 1s;
- -webkit-animation: logo__image--scale 1s;
- -moz-animation: logo__image--scale 1s;
+ animation: logo__image--scale 1.5s;
+ -webkit-animation: logo__image--scale 1.5s;
+ -moz-animation: logo__image--scale 1.5s;
 }
 
 @keyframes logo__title--transparent {
