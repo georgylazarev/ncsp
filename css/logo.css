@@ -50,10 +50,11 @@
   animation: logo__image--scale 1.5s;
   -webkit-animation: logo__image--scale 1.5s;
   -moz-animation: logo__image--scale 1.5s;
-  width: 80%;
-  max-width: 400px;
-  height: auto;
-  margin-top: 5%;
+  width: auto;
+  max-width: 100%;
+  height: 35vh;
+  width: auto;
+  margin-top: 5vh;
 }
 
 @keyframes logo__title--transparent {
@@ -91,58 +92,41 @@
   color: #54A7C4;
   font-weight: 700;
   text-align: center;
-  font-size: 36pt;
-  width: 100%;
+  font-size: 7vh;
   min-width: 320px
-}
-@media (min-width: 320px) {
-  .logo__title {
-    font-size: 24px;
-    line-height: 120%;
-  }
-}
-@media (min-width: 660px) {
-  .logo__title {
-    font-size: 40px;
-    line-height: 54px;
-  }
-}
-@media (min-width: 1200px) {
-  .logo__title {
-    font-size: 50px;
-    line-height: 68px;
-  }
+  margin-top: 1vh;
+  max-width: 100%;
 }
 
 @keyframes contacts--up {
   from {
-    margin-top: -16px;
+    margin-top: -1vh;
     opacity: 0;
   }
   to {
-    margin-top: 16px;
+    margin-top: 1vh;
     opacity: 1;
   }
 }
 
 @-webkit-keyframes contacts--up {
   from {
-    margin-top: -16px;
+    margin-top: -1vh;
     opacity: 0;
   }
   to {
-    margin-top: 16px;
+    margin-top: 1vh;
     opacity: 1;
   }
 }
 
 @-moz-keyframes contacts--up {
   from {
-    margin-top: -16px;
+    margin-top: -1vh;
     opacity: 0;
   }
   to {
-    margin-top: 16px;
+    margin-top: 1vh;
     opacity: 1;
   }
 }
@@ -159,15 +143,16 @@
   animation: contacts--up 2s;
   -webkit-animation: contacts--up 2s;
   -moz-animation: contacts--up 2s;
-  margin-top: 16px;
-  font-size: 16pt;
+  margin-top: 1vh;
+  font-size: 3vh;
   color: #54A7C4;
   font-weight: 300;
   
 }
 
 .logo__email-link {
-  font-size: 16pt;
+  margin-top: 1vh;
+  font-size: 3vh;
   color: #54A7C4;
   font-weight: 700;
 }
@@ -177,8 +162,8 @@
   animation: contacts--up 2s;
   -webkit-animation: contacts--up 2s;
   -moz-animation: contacts--up 2s;
-  margin-top: 16px;
-  font-size: 16pt;
+  margin-top: 1vh;
+  font-size: 3vh;
   color: #54A7C4;
   font-weight: 300;
 }
