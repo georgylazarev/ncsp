@@ -96,11 +96,10 @@
   flex-direction: column;
   align-items: center;
   justify-content: flex-start;
-  position: relative;
   width: 100%;
   min-width: 320px;
-  height: 80vh;
-  padding-top: 10vh;
+  height: 90vh;
+  padding-top: 5vh;
 }
 
 .logo__picture {
@@ -116,6 +115,7 @@
   max-width: 100%;
   height: 35vh;
   width: auto;
+  outline: 1px solid green;
 }
 
 .logo__title {
