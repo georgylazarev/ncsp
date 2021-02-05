@@ -9,6 +9,10 @@
   min-width: 320px;
 }
 
+.logo__picture {
+  text-align: center;
+}
+
 @keyframes logo__image--scale {
   from {
     transform: scale(3);
