@@ -23,16 +23,16 @@
 }
 
 @keyframes logo__image--scale {
- from { transform: scale(10); }
- to { transform: scale(1);}
+ from { transform: scale(3); opacity: 0; }
+ to { transform: scale(1); opacity: 1; }
 }
 @-webkit-keyframes logo__image--scale {
- from { transform: scale(10); }
- to { transform: scale(1);}
+ from { transform: scale(3); opacity: 0; }
+ to { transform: scale(1);opacity: 1;}
 }
 @-moz-keyframes logo__image--scale {
- from { transform: scale(10); }
- to { transform: scale(1);}
+ from { transform: scale(3); opacity: 0; }
+ to { transform: scale(1);opacity: 1;}
 }
 .logo__image {
  
@@ -71,25 +71,25 @@
 }
 
 @keyframes contacts--up {
- from { bottom: -15vh; }
- to { bottom: 0;}
+ from { bottom: 0; opacity: 0; }
+ to { bottom: 1vh; opacity: 1;}
 }
 @-webkit-keyframes contacts--up {
-  from { bottom: -15vh; }
-  to { bottom: 0;}
+  from { bottom: 0; opacity: 0; }
+  to { bottom: 1vh; opacity: 1;}
 }
 @-moz-keyframes contacts--up {
-  from { bottom: -15vh; }
-  to { bottom: 0;}
+  from { bottom: 0; opacity: 0; }
+  to { bottom: 1vh; opacity: 1;}
 }
 .contacts {
   display: none;
-  animation: contacts--up 2s;
-  -webkit-animation: contacts--up 2s;
-  -moz-animation: contacts--up 2s;
+  animation: contacts--up 1.5s;
+  -webkit-animation: contacts--up 1.5s;
+  -moz-animation: contacts--up 1.5s;
   
   position: absolute;
-  bottom: 0;
+  bottom: 1vh;
   height: 5vh;
 }
 
